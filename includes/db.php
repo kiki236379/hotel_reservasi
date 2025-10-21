@@ -1,7 +1,7 @@
 <?php
 $host = "localhost";
 $user = "root";     // default user XAMPP
-$pass = "";          // default password kosong
+$pass = "rpl12345";          // default password kosong
 $dbname = "ichiban_sushi";
 
 $conn = mysqli_connect($host, $user, $pass, $dbname);
