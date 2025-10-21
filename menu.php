@@ -9,7 +9,7 @@ $result = mysqli_query($conn, "SELECT * FROM menu");
     <?php while($row = mysqli_fetch_assoc($result)): ?>
       <div class="col-md-4 mb-4">
         <div class="card">
-          <img src="uploads/<?php echo $row['gambar']; ?>" class="card-img-top" alt="<?php echo $row['nama_menu']; ?>">
+          <img src="assets/images/<?= $row['gambar']; ?>" class="card-img-top" alt="<?= $row['nama_menu']; ?>">
           <div class="card-body">
             <h5 class="card-title"><?php echo $row['nama_menu']; ?></h5>
             <p class="card-text"><?php echo $row['deskripsi']; ?></p>
