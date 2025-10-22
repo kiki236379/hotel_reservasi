@@ -16,3 +16,14 @@ CREATE TABLE menu (
     harga DECIMAL(10,2),
     gambar VARCHAR(255)
 );
+
+CREATE TABLE reservasi (
+  id INT AUTO_INCREMENT PRIMARY KEY,
+  nama VARCHAR(100),
+  email VARCHAR(100),
+  tanggal DATE,
+  waktu TIME,
+  jumlah_tamu INT,
+  catatan TEXT,
+  created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
